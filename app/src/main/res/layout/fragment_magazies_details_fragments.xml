@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingStart="20dp"
+    tools:context=".fragments.MagaziesDetailsFragments">
+
+    <TextView
+        android:id="@+id/txtActualidad"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="Title"
+        app:layout_constraintBottom_toTopOf="@+id/txtModa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <TextView
+        android:id="@+id/txtModa"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="Id"
+        app:layout_constraintBottom_toTopOf="@+id/txtHorroscopo"
+        app:layout_constraintEnd_toEndOf="@+id/txtActualidad"
+        app:layout_constraintStart_toStartOf="@+id/txtActualidad"
+        app:layout_constraintTop_toBottomOf="@+id/txtActualidad" />
+
+    <TextView
+        android:id="@+id/txtHorroscopo"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="Año"
+        app:layout_constraintBottom_toTopOf="@+id/txtInternacionales"
+        app:layout_constraintEnd_toEndOf="@+id/txtModa"
+        app:layout_constraintStart_toStartOf="@+id/txtModa"
+        app:layout_constraintTop_toBottomOf="@+id/txtModa" />
+
+    <TextView
+        android:id="@+id/txtInternacionales"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="Description"
+        app:layout_constraintBottom_toTopOf="@+id/imgViewA"
+        app:layout_constraintEnd_toEndOf="@+id/txtHorroscopo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtHorroscopo"
+        app:layout_constraintTop_toBottomOf="@+id/txtHorroscopo" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="Editar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgViewA" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:text="Agregar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgViewA" />
+
+    <ImageView
+        android:id="@+id/imgViewA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtInternacionales"
+        app:layout_constraintStart_toStartOf="@+id/txtInternacionales"
+        app:layout_constraintTop_toBottomOf="@+id/txtInternacionales"
+        tools:src="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

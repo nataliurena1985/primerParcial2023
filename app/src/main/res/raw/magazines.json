@@ -1,0 +1,25 @@
+[
+  {
+    "title": "gente",
+    "year": 2005,
+    "image" : "logo",
+    "description ": "hola revista gente"
+  },
+  {
+    "title": "caras",
+    "year": 2005,
+    "image" : "logo",
+    "description ": "hola revista gente"
+  },
+  {
+    "title": "paparazi",
+    "year": 2005,
+    "image" : "logo",
+    "description ": "hola revista gente"
+  },
+  {"title": "hola",
+    "year": 2005,
+    "image" : "logo",
+    "description ": "hola revista gente"
+  }
+]
